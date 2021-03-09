@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button startButton = (Button) findViewById(R.id.startButton);
-        startButton.setOnClickListener(this);
+        setContentView(R.layout.activity_main_menu2);
+        Button buttonTheme = (Button) findViewById(R.id.button3);
+        buttonTheme.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(this,MainMenu.class);
+        Intent i = new Intent(this,ThemeMenu.class);
         startActivity(i);
     }
 }
