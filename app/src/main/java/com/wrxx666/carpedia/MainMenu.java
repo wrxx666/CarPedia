@@ -19,7 +19,14 @@ public class MainMenu extends AppCompatActivity implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(this,ThemeMenu.class);
-        startActivity(i);
+        Intent i;
+        switch (v.getId()){
+            case R.id.button3:
+                i = new Intent(this,ThemeMenu.class);
+                startActivity(i);
+                break;
+        }
+
+
     }
 }
