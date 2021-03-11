@@ -19,7 +19,13 @@ public class ThemeMenu extends AppCompatActivity implements View.OnClickListener
 
     @Override
     public void onClick(View v) {
-        Intent i = new Intent(this,GasDistributionMenu.class);
-        startActivity(i);
+        Intent i;
+        switch (v.getId()){
+            case R.id.gdmButton:
+                i = new Intent(this,GasDistributionMenu.class);
+                startActivity(i);
+                break;
+        }
+
     }
 }

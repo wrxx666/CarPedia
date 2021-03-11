@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstGDMTheme">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:text="Что такое ГРМ?"
+            android:textAlignment="center"
+            android:textSize="27dp"
+            android:gravity="center_horizontal" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Газораспределительный механизм (ГРМ) — механизм, обеспечивающий впуск и выпуск рабочего тела в двигателях внутреннего сгорания. Может иметь как фиксированные фазы газораспределения, так и регулируемые в зависимости от частоты вращения коленвала и других факторов.
+
+Чаще всего состоит из распределительного вала — или нескольких валов — и механизмов привода к ним, клапанов, открывающих и закрывающих впускные и выпускные отверстия в камерах сгорания, и передаточных звеньев — толкателей, штанг, коромысел и некоторых вспомогательных деталей (регулировочных элементов, клапанных пружин, системы поворота клапанов и проч.) В некоторых конструкциях система распределения представлена вращающимися или качающимися распределительными гильзами или золотниками.
+
+Система привода распределительного вала четырёхтактного двигателя в любом случае обеспечивает его вращение с угловой скоростью, равной 1/2 угловой скорости коленвала. \n  "
+                    android:textSize="22dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="333dp"
+                    app:srcCompat="@drawable/four_stroke_cycle_compression" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Разрез по цилиндру двигателя с двухвальным ГРМ типа DOHC"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GDMCharact">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:textSize="27dp"
+            android:text="Характеристика ГРМ"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/graphic1" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="22dp"
+                    android:text="1. Сопротивление впускного и выпускного трактов, ограничивающее быстроходность и снижающее наполнение на более высоких оборотах. Определяется пропускными сечениями клапанов и патрубков, шероховатостью каналов, их изгибом, настройкой (инерционный наддув). При росте сопротивления пики максимума наполнения сдвигаются в область меньшего числа оборотов, что ограничивает мощность ДВС \n \n2. Настройки фаз газораспределения (углы опережения открытия впускных и выпускных клапанов/золотников, углы запаздывания закрытия). Эти настройки позволяют частично компенсировать сопротивление впускных и выпускных трактов, сместив максимум наполнения цилиндров от нулевой частоты вращения (при нулевых углах) до частоты, заданной конструктором. Обычно, максимум наполнения соответствует максимуму крутящего момента. На рисунке представлены кривые, соответствующие VVT (1), тихоходной настройке (2), настройке примерно на 0,5 максимальной частоты вращения (3), и скоростной настройке (4) \n \n3. Возможность получения компактной камеры сгорания (минимальных размеров) и низкой температуры в районе догорания топливной смеси (искровые ДВС). Это позволяет иметь меньше всего газов в области гашения пламени (что снижает выбросы), и улучшить экономичность \n \n4. Коэффициент остаточных газов, возможность турбулизации заряда; простота, дешевизна, надёжность, габариты и общая масса деталей." />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
